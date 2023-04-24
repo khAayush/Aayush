@@ -5,7 +5,7 @@
 
 :root{
     --primary-color: #1e2029;
-    --secondary-color: #737ade;
+    --secondary-color: #735ade;
     --theme-font: 'Atkinson Hyperlegible', sans-serif;
 }
 
@@ -30,6 +30,7 @@ body, html {
     scrollbar-color: var(--primary-color);
     overflow-y: visible;
     scroll-behavior: smooth;
+    user-select: none;
 }
 
 .menu-container {
@@ -47,6 +48,9 @@ body, html {
 }
 
 .menu-line {
+    border: none;
+    background: #fff;
+    height: 2px;
     width: 65vw;
 }
 
@@ -80,7 +84,7 @@ body, html {
 }
 
 .home {
-    margin: 8vw 0;
+    margin: 8vw 0 7vw 0;
 }
 
 .home .name {
@@ -111,4 +115,59 @@ body, html {
 .home .photo img {
     width: 63vw;
     height: 45vw;
+    border-radius: 15px;
+}
+
+.about {
+    display: flex;
+}
+
+.about-text {
+    align-content: center;
+    display: grid;
+}
+
+.about-text .about-text-container {
+    background: var(--secondary-color);
+    padding: 1vw 4vw;
+    position: relative;
+    z-index: 2;
+    left: 2vw;
+    box-shadow: 4px 4px 4px 4px #00000041;
+    border-radius: 5px;
+}
+
+.about-text .about-text-container h1 {
+    margin-block: 1.5vw;
+    font-weight: 400;
+    font-size: 2.5vw;
+    width: 20vw;
+}
+
+.about-text .about-text-container p {
+    font-size: 1.3vw;
+    margin-block: 1.5vw 2vw;
+    font-weight: 100;
+}
+
+.about-text .about-text-container a {
+    text-decoration: none;
+    color: #000;
+    background-color: #FFF;
+    padding: 0.7vw 2vw;
+    margin-block: 2vw;
+    border-radius: 5px;
+    transition: 0.3s;
+    position: relative;
+    top: -0.7vw;
+    font-size: 1vw;
+}
+
+.about-text .about-text-container a:hover {
+    background-color: wheat;
+}
+
+.about-image img {
+    height: 50vw;
+    margin-block: 1vw;
 }

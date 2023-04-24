@@ -133,7 +133,7 @@ body, html {
     position: relative;
     z-index: 2;
     left: 2vw;
-    box-shadow: 4px 4px 4px 4px #00000041;
+    box-shadow: 4px 4px 30px 1px #1e1e1e;
     border-radius: 5px;
 }
 
@@ -164,7 +164,7 @@ body, html {
 }
 
 .about-text .about-text-container a:hover {
-    background-color: wheat;
+    background-color: rgba(245, 222, 179, 0.822);
 }
 
 .about-image img {

@@ -5,7 +5,7 @@
 
 :root{
     --primary-color: #1e2029;
-    --secondary-color: #737ade;
+    --secondary-color: #735ade;
     --theme-font: 'Atkinson Hyperlegible', sans-serif;
 }
 
@@ -47,6 +47,9 @@ body, html {
 }
 
 .menu-line {
+    border: none;
+    background: #fff;
+    height: 2px;
     width: 65vw;
 }
 
@@ -111,4 +114,40 @@ body, html {
 .home .photo img {
     width: 63vw;
     height: 45vw;
+    border-radius: 15px;
+}
+
+.about {
+    display: flex;
+}
+
+.about-text {
+    align-content: center;
+    display: grid;
+}
+
+.about-text .about-text-container {
+    background: var(--secondary-color);
+    padding: 1vw 4vw;
+    position: relative;
+    z-index: 2;
+    left: 2vw;
+    box-shadow: 4px 4px 4px 4px #00000041;
+}
+
+.about-text .about-text-container h1 {
+    margin-block: 1.5vw;
+    font-weight: 400;
+    font-size: 2.5vw;
+    width: 20vw;
+}
+
+.about-text .about-text-container p {
+    font-size: 1.3vw;
+    margin-block: 1.5vw;
+    font-weight: 100;
+}
+
+.about-image img {
+    height: 50vw;
 }

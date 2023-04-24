@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: #1e2029;
+    --secondary-color: #737ade;
+    --theme-font: 'Atkinson Hyperlegible', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0.5vw;
+}
+
+::-webkit-scrollbar-track {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+    border-radius: 100vw;
+}
+
+body, html {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-family: var(--theme-font);
+    scrollbar-width: 0.5vw;
+    scrollbar-color: var(--primary-color);
+    overflow-y: visible;
+    scroll-behavior: smooth;
+}
+
+.menu-container {
+    margin: 0 18vw;
+}
+
+.menu-logo {
+    display: grid;
+    justify-content: center;
+    margin-block: 1vw 0.7vw;
+}
+
+.menu-logo img {
+    height: 3.7vw;
+}
+
+.menu-line {
+    width: 65vw;
+}
+
+.menu-links {
+    margin-block: 1vw 1vw;
+}
+
+.menu-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-links ul li {
+    padding-inline: 1vw;
+}
+
+.menu-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3vw;
+    transition: 0.3s;
+}
+
+.menu-links ul li a:hover {
+    color: var(--secondary-color);
+}
+
+.webpage-container {
+    margin-inline: 18vw;
+}
+
+.home {
+    margin: 8vw 0;
+}
+
+.home .name {
+    display: grid;
+    justify-content: center;
+}
+
+.home .name h1 {
+    font-size: 3.5vw;
+    font-weight: 400;
+}
+
+.hero {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.home .name h4 {
+    font-weight: 200;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+.home .photo {
+    margin-block: 3vw;
+}
+
+.home .photo img {
+    width: 63vw;
+    height: 45vw;
+}

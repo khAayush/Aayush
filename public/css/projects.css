@@ -15,7 +15,8 @@ slider{width: 100%}
 	align-items: center;
 	justify-content: center;
 	position: relative;
-	min-height: 350px;
+	min-height: 30vw;
+    /* min-width: 20vw; */
 	perspective: 1000px;
 	overflow: hidden;
 }
@@ -34,7 +35,10 @@ slider{width: 100%}
 	user-select: none;
 	cursor: pointer;
 }
-.testimonials .item h1{font-size: 114px; color: white;}
+.testimonials .item h1{
+    font-size: 1.3vw; 
+    color: white;
+}
 .dots{display: flex; justify-content: center;align-items: center;}
 .dots label{
 	height: 5px;

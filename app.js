@@ -8,6 +8,10 @@ app.get("/",(req,res)=>{
     res.render("/Project 69/views/index.ejs");
 });
 
+app.get("/projects",(req,res)=>{
+    res.render("/Project 69/views/projects.ejs");
+});
+
 app.listen(8080, function(){
     console.log("Jaa browser ma herr");
 });
